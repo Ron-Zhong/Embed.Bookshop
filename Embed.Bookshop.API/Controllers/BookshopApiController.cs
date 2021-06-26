@@ -51,7 +51,7 @@ namespace Embed.Bookshop.API.Controllers
         /// <summary>
         /// 3.	A method to return information about a specific book
         /// </summary>
-        /// <param name="isbn" example="4882978795968"></param>
+        /// <param name="isbn" example="1700729106651"></param>
         [HttpGet]
         [Route("~/api/books/{isbn}")]
         public async Task<ActionResult> GetBookAsync(string isbn)
@@ -70,7 +70,7 @@ namespace Embed.Bookshop.API.Controllers
         /// <summary>
         /// 4.	A method to create an order for a specific book from a specific store
         /// </summary>
-        /// <param name="isbn" example="8954884915612"></param>
+        /// <param name="isbn" example="1700729106651"></param>
         /// <param name="bookstoreId" example="10e340a7-36ac-4a7d-d795-08d938603709"></param>
         /// <param name="email" example="ron.zhong@gmail.com"></param>
         /// <response code="201">Created</response>

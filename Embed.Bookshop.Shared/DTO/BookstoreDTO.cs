@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Embed.Bookshop.DTO
 {
-    public class StockDTO
+    public class BookstoreDTO
     {
         public Guid BookstoreId { get; set; }
         public string BookstoreName { get; set; }

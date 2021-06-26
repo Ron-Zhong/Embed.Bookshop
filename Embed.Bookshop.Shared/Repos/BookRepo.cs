@@ -33,7 +33,7 @@ namespace Embed.Bookshop.Repos
                     ISBN = x.Key,
                     BookName = x.Max(y => y.BookName),
                     Author = x.Max(y => y.Author),
-                    Stock = x.Sum(i => i.Stock),
+                    Stocks = x.Sum(i => i.Stock),
                     MaxPrice = x.Max(i => i.Price),
                     MinPrice = x.Min(i => i.Price),
                 });
@@ -56,9 +56,9 @@ namespace Embed.Bookshop.Repos
                 return null;
             }
 
-            book.Stocks = await Context.Inventories
+            book.Bookstores = await Context.Inventories
                 .Where(x => x.ISBN.Equals(book.ISBN))
-                .Select(x => new StockDTO()
+                .Select(x => new BookstoreDTO()
                 {
                     BookstoreId = x.Bookstore.Id,
                     BookstoreName = x.Bookstore.Name,

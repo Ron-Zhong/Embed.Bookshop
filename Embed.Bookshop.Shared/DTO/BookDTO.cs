@@ -13,10 +13,10 @@ namespace Embed.Bookshop.DTO
         public string BookName { get; set; }
         public string Author { get; set; }
 
-        public int Stock { get; set; }
+        public int Stocks { get; set; }
         public double MinPrice { get; set; }
         public double MaxPrice { get; set; }
 
-        public List<StockDTO> Stocks { get; set; }
+        public List<BookstoreDTO> Bookstores { get; set; }
     }
 }
