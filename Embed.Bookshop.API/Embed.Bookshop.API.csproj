@@ -6,7 +6,8 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath></OutputPath>
-    <DocumentationFile>obj\Debug\net5.0\MIMS.Education.API.xml\Embed.Bookshop.API.xml</DocumentationFile>
+    <DocumentationFile>obj\Debug\net5.0\Embed.Bookshop.API.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591;IL2026</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>

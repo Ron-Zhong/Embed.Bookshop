@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Embed.Bookshop.Database", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Embed.Bookshop.API", "Embed.Bookshop.API\Embed.Bookshop.API.csproj", "{281318FF-3B65-4952-85BC-366BD9BBB629}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Embed.Bookshop.UnitTest", "Embed.Bookshop.UnitTest\Embed.Bookshop.UnitTest.csproj", "{81321A35-7EBB-414A-96E1-589A2DE41885}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{281318FF-3B65-4952-85BC-366BD9BBB629}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{281318FF-3B65-4952-85BC-366BD9BBB629}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{281318FF-3B65-4952-85BC-366BD9BBB629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81321A35-7EBB-414A-96E1-589A2DE41885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81321A35-7EBB-414A-96E1-589A2DE41885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81321A35-7EBB-414A-96E1-589A2DE41885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81321A35-7EBB-414A-96E1-589A2DE41885}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{9C6668C2-637D-4D29-8BFC-060F7014FFB8} = {BE01F5CD-BAB4-4161-B6C3-8CB7D16CA586}
 		{6A7E176F-F6A7-4115-BDAC-71EDFA819A71} = {7B8ACF25-2348-45C1-8C85-A15B0006084C}
 		{281318FF-3B65-4952-85BC-366BD9BBB629} = {CF9D8238-455B-4AA6-9ACB-E2DB5376E58D}
+		{81321A35-7EBB-414A-96E1-589A2DE41885} = {45BBF3FB-4E47-46B8-99F0-EF877CBA0B66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {054272C3-0E15-4FBB-8DBB-A276005CB470}

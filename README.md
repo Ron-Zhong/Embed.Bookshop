@@ -1,6 +1,13 @@
-# Embed.Bookshop
-* https://themeforest.net/item/bookworm-bookstore-bookshop-ecommerce-html-template/26621064?ref=digital_square
+# Embed.Bookshop.API
+* Demo https://embed-bookshop.azurewebsites.net/
 
-# Database 
-* embeddb.database.windows.net
-* embedadm : Iloveembed99!!
+# Embed.Bookshop Solution
+* Embed.Bookshop.API
+* Embed.Bookshop.Shared
+* Embed.Bookshop.Database
+* Embed.Bookshop.UnitTest
+
+# Architecture
+
+
+# Requirement

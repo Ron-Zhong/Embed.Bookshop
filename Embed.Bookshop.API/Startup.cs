@@ -57,7 +57,13 @@ namespace Embed.Bookshop.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Embed.Bookshop.API v1.0.0"));
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Embed.Bookshop.API v1.0.0");
+
+                    //To serve the Swagger UI at the app's root (http://localhost:<port>/):
+                    c.RoutePrefix = string.Empty;
+                });
             }
 
 
