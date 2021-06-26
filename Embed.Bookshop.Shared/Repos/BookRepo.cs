@@ -10,8 +10,9 @@ namespace Embed.Bookshop.Repos
 {
     public interface IBookRepo
     {
-        Task<BookDTO> SearchAsync(string keyword);
         IQueryable<BookDTO> QueryAll();
+        Task<List<BookDTO>> SearchAsync(string keyword);
+        Task<BookDTO> GetAsync(string isbn);
     }
 
     public class BookRepo : IBookRepo
@@ -39,7 +40,12 @@ namespace Embed.Bookshop.Repos
         }
 
 
-        public async Task<BookDTO> SearchAsync(string keyword)
+        public async Task<List<BookDTO>> SearchAsync(string keyword)
+        {
+            return await QueryAll().Where(x => x.BookName.Contains(keyword) || x.Author.Contains(keyword) || x.ISBN.Contains(keyword)).ToListAsync();
+        }
+
+        public async Task<BookDTO> GetAsync(string keyword)
         {
             var book = await QueryAll()
                             .Where(x => x.BookName.Contains(keyword) || x.Author.Contains(keyword) || x.ISBN.Contains(keyword))
