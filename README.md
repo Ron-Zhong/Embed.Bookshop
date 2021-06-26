@@ -8,9 +8,11 @@
 * Identity Server with Social SSO Services
 * Azure API Management (security and throttling)
 * Web API (Azure AppService)
+* Azure SQL Server with Azure Key Vaulte for securing database credential
 * Function Apps (triggered by blob storage)
 * Logic Apps (triggered by incoming emails)
-![image](https://user-images.githubusercontent.com/43414651/123509612-0c5a6580-d6a9-11eb-8420-e5007ab936d8.png)
+![image](https://user-images.githubusercontent.com/43414651/123509975-52182d80-d6ab-11eb-96ff-193c42828c90.png)
+
 
 
 # Solution (Layered Structure)
