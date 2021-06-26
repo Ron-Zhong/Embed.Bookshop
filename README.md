@@ -11,6 +11,8 @@
 
 
 # Architecture
+![image](https://user-images.githubusercontent.com/43414651/123509612-0c5a6580-d6a9-11eb-8420-e5007ab936d8.png)
+
 
 
 # Database (code-first approach with EF Core 5.0)
