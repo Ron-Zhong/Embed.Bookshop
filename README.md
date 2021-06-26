@@ -1,6 +1,6 @@
 # Embed.Bookshop.API
 * Demo https://embed-bookshop.azurewebsites.net/
-![image](https://devmedustorage.blob.core.windows.net/image/Video_2021-06-26_162942.gif)
+![image](https://user-images.githubusercontent.com/43414651/123507736-acaa8d00-d69d-11eb-9116-b4bc138fc0b7.png)
 
 
 # Embed.Bookshop Solution (layered structure)
