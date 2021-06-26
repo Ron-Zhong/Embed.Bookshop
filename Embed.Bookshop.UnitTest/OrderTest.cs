@@ -18,10 +18,11 @@ namespace Embed.Bookshop.UnitTest
         }
 
         /// <summary>
+        /// Order an available Book B from BookStore A
         /// Book B (8954884915612)
-        /// BookStore (10e340a7-36ac-4a7d-d795-08d938603709)
+        /// BookStore A(10e340a7-36ac-4a7d-d795-08d938603709)
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Created201</returns>
         [Test]
         public async Task NewOrderTest()
         {
@@ -38,9 +39,9 @@ namespace Embed.Bookshop.UnitTest
         }
 
         /// <summary>
-        /// Invalid ISDN "xxx"
+        /// Try to order with an invalid ISBN (xxx)
         /// </summary>
-        /// <returns></returns>
+        /// <returns>BadRequest400</returns>
         [Test]
         public async Task InvalidBookIsdnTest()
         {
@@ -57,9 +58,9 @@ namespace Embed.Bookshop.UnitTest
         }
 
         /// <summary>
-        /// Book ISDN: 4882978795968 (out of stock)
+        /// Try to order an unavailable book (out of stock)
         /// </summary>
-        /// <returns></returns>
+        /// <returns>BadRequest400</returns>
         [Test]
         public async Task UnavailableBookTest()
         {
